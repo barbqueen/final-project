@@ -7,7 +7,7 @@ public class AcmePay {
         System.out.println("Please enter shift - 1 , 2 , or 3");
         int shift = input.nextInt();
 
-      //ask for hours worked
+
       
       //ask for participation in retirement plan if the second or third shift are selected
 
@@ -22,7 +22,7 @@ public class AcmePay {
 
     public static double payRate(int shift)
     {
-        //fill in the details 
+        //fill in the details
           
     return rate;
     }
