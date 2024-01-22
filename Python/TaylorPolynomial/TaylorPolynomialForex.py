@@ -8,7 +8,7 @@ labels = ['First Order', 'Third Order', 'Fifth Order', 'Seventh Order']
 
 plt.figure(figsize = (10,8))
 for n, label in zip(range(4), labels):
-     y = y + (x**n) / np.math.factorial(n)
+     y = y + (x**(2*n+1)) / np.math.factorial(2*n+1)
      plt.plot(x,y, label = label)
 
 plt.plot(x, np.exp(x), 'k', label = 'Analytic e to the x') ##actual graph
