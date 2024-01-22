@@ -8,7 +8,7 @@ labels = ['First Order', 'Third Order', 'Fifth Order', 'Seventh Order']
 
 plt.figure(figsize = (10,8))
 for n, label in zip(range(1,4), labels):
-    y = y + (-1) ** n * (x**(2*n+1))/np.math.factorial(2*n+1) ##each order of taylor polynomial
+    y = y + (-1) ** n * (x**(2*n+1))/np.math.factorial(2*n+1) ##each degree of taylor polynomial
     plt.plot(x,y, label = label)
 
 plt.plot(x, np.log1p(x), 'k', label = 'Analytic ln(x+1)') ##actual graph
