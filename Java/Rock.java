@@ -25,24 +25,33 @@ public class Rock {
         System.out.println("Computer play is: " + computerPlay);
 
         // Determine winner using nested if statements
-        if (personPlay.equals(computerPlay)) {
+        if (personPlay.equals(computerPlay)) 
+        {
             System.out.println("It's a tie!");
-        } else if (personPlay.equals("R")) {
+        } 
+        else if (personPlay.equals("R")) 
+        {
             if (computerPlay.equals("S"))
                 System.out.println("Rock crushes scissors. You win!!");
             else if (computerPlay.equals("P"))
                 System.out.println("Paper eats rock. You lose!!");
-        } else if (personPlay.equals("P")) {
+        } 
+        else if (personPlay.equals("P")) 
+        {
             if (computerPlay.equals("R"))
                 System.out.println("Paper eats rock. You win!!");
             else if (computerPlay.equals("S"))
                 System.out.println("Scissors cuts paper. You lose!!");
-        } else if (personPlay.equals("S")) {
+        } 
+        else if (personPlay.equals("S")) 
+        {
             if (computerPlay.equals("P"))
                 System.out.println("Scissors cuts paper. You win!!");
             else if (computerPlay.equals("R"))
                 System.out.println("Rock crushes scissors. You lose!!");
-        } else {
+        } 
+        else 
+        {
             System.out.println("Invalid user input.");
         }
     }
